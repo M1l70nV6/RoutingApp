@@ -12,7 +12,7 @@ const routes: Routes = [
         loadChildren: ()=>import("./inicio/inicio.module").then(hijo=>hijo.InicioPageModule)
       },
       {//Instanciar la pagina hija nudo
-        path:"nudo",
+        path:"nudo/:id", // modificar nudo para recibir un id
         loadChildren: ()=>import("./nudo/nudo.module").then(hijo=>hijo.NudoPageModule)
       },
       {//Instanciar la pagina hija desenlace
